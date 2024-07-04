@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional Styles for Animations */
+        .education__card {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .education__card:hover {
+            transform: translateY(-5px);
+        }
+        .education__card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+        .education__card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .education__card:hover .overlay {
+            transform: translateY(0);
+        }
+    </style>
+    <title>My Education | Ain Fitri</title>
+</head>
+<body>
+    <header>
+        <nav class="section__container nav__container">
+            <div class="nav__logo"><h2>AIN FITRI</h2></div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="about.html">About Me</a></li>
+                <li class="link"><a href="skills.html">Skill</a></li>
+                <li class="link"><a href="experience.html">Experience</a></li>
+                <li class="link"><a href="education.html">Education</a></li>
+            </ul>
+            <button class="contact__me__btn">Contact Me</button>
+        </nav>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <h1>My Education</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="education">
+        <div class="section_container education_container">
+            <h2 class="section__title">My Education</h2>
+            <p class="section__subtitle">
+                Here's a glimpse into my academic journey and achievements:
+            </p>
+           <div class="education__grid">
+                <div class="education__card">
+                    <img src="image/education 2.png">
+                    <div class="overlay">
+                        <h4>Bachelor's Degree in Business Administration (Hons.) Marketing</h4>
+                        <p>Universiti Teknologi MARA (UiTM)</p>
+                        <p>2023 - Current</p>
+                        <p>CGPA: 3.67</p>
+                    </div>
+                </div>
+                <div class="education__card">
+                    <img src="image/education 1.png">
+                    <div class="overlay">
+                        <h4>Diploma in Hotel and Tourism Management</h4>
+                        <p>Universiti Teknologi MARA (UiTM)</p>
+                        <p>2020 - 2022</p>
+                        <p>CGPA: 3.79</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h2>AIN FITRI</h2>
+                <p>Subscribe Newsletter</p>
+                <form>
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="ri-send-plane-fill"></i></button>
+                </form>
+            </div>
+            <div class="footer__col">
+                <h4>About Me</h4>
+                <p>Skills</p>
+                <p>Experiences</p>
+                <p>Education</p>
+            </div>
+            <div class="footer__col">
+                <h4>Support</h4>
+                <p>Get Support</p>
+                <p>Contact</p>
+                <p>My Blog</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer__col">
+                <h4>Follow Me</h4>
+                <div class="social__icons">
+                    <span><i class="ri-send-plane-fill"></i></span>
+                    <span><i class="ri-behance-line"></i></span>
+                    <span><i class="ri-facebook-fill"></i></span>
+                    <span><i class="ri-twitter-fill"></i></span>
+                    <span><i class="ri-pinterest-line"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
